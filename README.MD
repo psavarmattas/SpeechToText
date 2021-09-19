@@ -23,9 +23,16 @@ from IPython.display import Audio
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Tokenizer
 </code></pre>
 
+<pre><code>
 tokenizer = Wav2Vec2Tokenizer.from_pretrained("facebook/wav2vec2-base-960h")
 model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-base-960h")
+</code></pre>
+
+<pre><code>
 file_name = 'my-audio.wav'
+</code></pre>
+
+<pre><code>
 data = wavfile.read(file_name)
 framerate = data[0]
 sounddata = data[1]
@@ -36,12 +43,15 @@ logits = model(input_values).logits
 predicted_ids = torch.argmax(logits, dim=-1)
 transcription = tokenizer.batch_decode(predicted_ids)[0]
 print(transcription)
-Before we begin
-Make sure to check the full source code of this tutorial in this Github repo.
+</code></pre>
 
-Wav2Vec: A Revolutionary Model
-wave2vec | speech to text
-Image 2
+## Before we begin
+Make sure to check the full source code of this tutorial in [this Github repo.](https://github.com/psavarmattas/SpeechToText)
+
+## Wav2Vec: A Revolutionary Model
+
+![Wav2Vec Model](![assistant image](https://github.com/psavarmattas/SpeechToText/blob/6f04d775b0bebbceec105a9930788feeaeb5c283/assets/image1.jpg))
+
 We will be using Wave2Vec — a state-of-the-art speech recognition approach by Facebook.
 
 The researchers at Facebook describe this approach as:
