@@ -3,7 +3,7 @@
 
 You may be frequently using Google Assistant or Apple’s Siri or even Amazon Alexa to find out quick answers on the web or to simply command something. These AI assistants are well known for understanding our speech commands and performing the desired tasks. They quickly respond to the speech commands like “OK, Google. What is the capital of Iceland?” or “Hey, Siri. Show me the recipe of Lasagna.” and display the accurate result. Have you ever wondered how they really do it? Today, we shall build a very simple speech recognition system that takes our voice as input and produces the corresponding text by hearing the input.
 
-![assistant image](X:\Maneesha\GitHub\SpeechToText\assets\image1.jpg)
+![assistant image](https://github.com/psavarmattas/SpeechToText/blob/6f04d775b0bebbceec105a9930788feeaeb5c283/assets/image1.jpg)
 
 TLDR Show me the code!
 If you are impatient like me, this is practically the full source code that can be quickly copied, pasted, and executed through a Python file. Make sure to have a file named ‘my-audio.wav’ as your speech input. Also, make sure you have all the libraries installed.
