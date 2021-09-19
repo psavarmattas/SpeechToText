@@ -5,13 +5,15 @@ You may be frequently using Google Assistant or Apple’s Siri or even Amazon Al
 
 ![assistant image](https://github.com/psavarmattas/SpeechToText/blob/6f04d775b0bebbceec105a9930788feeaeb5c283/assets/image1.jpg)
 
-TLDR Show me the code!
+## TLDR Show me the code!
+
 If you are impatient like me, this is practically the full source code that can be quickly copied, pasted, and executed through a Python file. Make sure to have a file named ‘my-audio.wav’ as your speech input. Also, make sure you have all the libraries installed.
 
 In the later part of the tutorial, we will be discussing what each of the lines is doing.
 
 Here’s the code!
 
+<pre><code>
 import torch
 import librosa
 import numpy as np
@@ -19,6 +21,8 @@ import soundfile as sf
 from scipy.io import wavfile
 from IPython.display import Audio
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Tokenizer
+</code></pre>
+
 tokenizer = Wav2Vec2Tokenizer.from_pretrained("facebook/wav2vec2-base-960h")
 model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-base-960h")
 file_name = 'my-audio.wav'
