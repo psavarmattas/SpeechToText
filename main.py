@@ -7,8 +7,8 @@ from IPython.display import Audio
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Tokenizer
 
 
-tokenizer = Wav2Vec2Tokenizer.from_pretrained("facebook/wav2vec2-base-960h")
-model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-base-960h")
+tokenizer = Wav2Vec2Tokenizer.from_pretrained("facebook/wav2vec2-base-100h")
+model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-base-100h")
 
 file_name = 'my-audio.wav'
 
