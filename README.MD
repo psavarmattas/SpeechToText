@@ -8,6 +8,12 @@ You may be frequently using Google Assistant or Apple’s Siri or even Amazon Al
 
 If you are impatient like me, this is practically the full source code that can be quickly copied, pasted, and executed through a Python file. Make sure to have a file named ‘my-audio.wav’ as your speech input. Also, make sure you have all the libraries installed.
 
+For that you can install all the libraries one by one or you can run the command below:
+
+<pre><code>
+pip install -r requirements.txt
+</code></pre>
+
 In the later part of the tutorial, we will be discussing what each of the lines is doing.
 
 Here’s the code!
