@@ -32,7 +32,7 @@ requests==2.26.0
 resampy==0.2.2
 sacremoses==0.0.45
 scikit-learn==1.0.1
-scipy==1.7.1
+scipy==1.11.1
 six==1.16.0
 SoundFile==0.10.3.post1
 threadpoolctl==2.2.0
