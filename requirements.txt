@@ -24,7 +24,7 @@ pickleshare==0.7.5
 pooch==1.5.1
 prompt-toolkit==3.0.20
 pycparser==2.20
-Pygments==2.10.0
+Pygments==2.15.0
 pyparsing==2.4.7
 PyYAML==5.4.1
 regex==2021.8.28
